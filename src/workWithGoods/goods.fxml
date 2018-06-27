@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minWidth="1000.0" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workWithGoods.GoodsController">
+   <children>
+      <SplitPane dividerPositions="0.8209169054441261" layoutX="326.0" layoutY="99.0" orientation="VERTICAL" prefHeight="700.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="tableView" layoutX="249.0" layoutY="60.0" prefHeight="509.0" prefWidth="998.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+                    <columns>
+                      <TableColumn fx:id="iName" prefWidth="224.0" text="Name" />
+                      <TableColumn fx:id="iManufacturer" prefWidth="203.0" text="Manufacturer" />
+                        <TableColumn fx:id="iQuantity" prefWidth="104.0" text="Quantity" />
+                        <TableColumn fx:id="iWholPrice" prefWidth="130.0" text="Whol.Price" />
+                        <TableColumn fx:id="iRetailPrice" prefWidth="111.0" text="Ret.Price" />
+                        <TableColumn fx:id="iExpDate" prefWidth="209.0" text="Expiry Date" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="filterField" layoutX="169.0" layoutY="14.0" prefHeight="27.0" prefWidth="190.0" />
+                  <Label fx:id="searchMAnufacturer" layoutX="21.0" layoutY="19.0" prefHeight="17.0" prefWidth="140.0" text="Search Manufacturer" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <HBox layoutX="23.0" layoutY="34.0" spacing="13.0">
+                     <children>
+                        <TextField fx:id="nameInput" layoutX="23.0" layoutY="34.0" promptText="Name" />
+                        <TextField fx:id="manufacturerInput" layoutX="203.0" layoutY="34.0" promptText="Manufacturer" />
+                        <TextField fx:id="quantityInput" layoutX="387.0" layoutY="34.0" prefHeight="27.0" prefWidth="91.0" promptText="Quantity" />
+                        <TextField fx:id="wholPriceInput" layoutX="492.0" layoutY="34.0" prefHeight="27.0" prefWidth="97.0" promptText="Whol. Price" />
+                        <TextField fx:id="retPriceInput" layoutX="598.0" layoutY="34.0" prefHeight="27.0" prefWidth="97.0" promptText="Ret. Price" />
+                        <DatePicker fx:id="expDateInput" layoutX="706.0" layoutY="34.0" prefHeight="27.0" prefWidth="190.0" promptText="Expiry Date" />
+                        <Button fx:id="saveButton" layoutX="914.0" layoutY="34.0" mnemonicParsing="false" onAction="#onAddProduct" prefHeight="27.0" prefWidth="64.0" text="Save" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="deleteButton" layoutX="910.0" layoutY="70.0" mnemonicParsing="false" onAction="#onDeleteProduct" prefHeight="27.0" prefWidth="64.0" text="Delete" />
+                  <Label fx:id="nameLabel" layoutX="23.0" layoutY="75.0" prefHeight="17.0" prefWidth="167.0" textFill="#cc1616">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="manufacturerLabel" layoutX="202.0" layoutY="75.0" prefHeight="17.0" prefWidth="167.0" textFill="#cc1515">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="quantityLabel" layoutX="386.0" layoutY="75.0" prefHeight="17.0" prefWidth="85.0" textFill="#cc1515">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="wholPriceLabel" layoutX="489.0" layoutY="75.0" prefHeight="17.0" prefWidth="97.0" textFill="#cc1515">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="retPriceLabel" layoutX="600.0" layoutY="75.0" prefHeight="17.0" prefWidth="91.0" textFill="#cc1515">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="expiryDateLabel" layoutX="711.0" layoutY="75.0" prefHeight="17.0" prefWidth="177.0" textAlignment="CENTER" textFill="#cc1515">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="smallNameLabel" layoutX="23.0" layoutY="89.0" prefHeight="17.0" prefWidth="167.0" textFill="#cc1616">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

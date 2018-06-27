@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="383.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="383.0" prefWidth="571.0">
+         <children>
+            <Label layoutX="41.0" layoutY="93.0" prefHeight="9.0" prefWidth="122.0" text="Input first string" />
+            <Label layoutX="36.0" layoutY="137.0" prefHeight="17.0" prefWidth="133.0" text=" Input second string" />
+            <Label layoutX="37.0" layoutY="248.0" prefHeight="17.0" prefWidth="115.0" text="The result is..." />
+            <Label layoutX="37.0" layoutY="42.0" prefHeight="20.0" prefWidth="516.0" text="Click the button to see which first string symbols don't appear in the second one..." />
+            <Label layoutX="240.0" layoutY="183.0" prefHeight="20.0" prefWidth="97.0" />
+            <Button fx:id="button" layoutX="199.0" layoutY="173.0" mnemonicParsing="false" onMouseClicked="#getSymbols" prefHeight="23.0" prefWidth="138.0" text="Click me!" />
+            <Label layoutX="216.0" layoutY="248.0" prefHeight="17.0" prefWidth="152.0" />
+            <TextField fx:id="firstString" layoutX="191.0" layoutY="88.0" />
+            <TextField fx:id="secondString" layoutX="191.0" layoutY="132.0" />
+            <Label fx:id="result" layoutX="169.0" layoutY="243.0" prefHeight="27.0" prefWidth="357.0" AnchorPane.rightAnchor="45.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
